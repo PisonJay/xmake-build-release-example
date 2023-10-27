@@ -24,8 +24,7 @@ jobs:
         uses: xmake-io/github-action-setup-xmake@v1
       - name: Build release
         run: yes | xmake build
-      - name: GH Release
-        uses: softprops/action-gh-release@v0.1.15
+      - uses: actions/upload-artifact@v3
         with:
-          files: build/linux/x86_64/release/xmake-build-release-example
-            
+          name: Executable
+          path: build/linux/x86_64/release/xmake-build-release-example
