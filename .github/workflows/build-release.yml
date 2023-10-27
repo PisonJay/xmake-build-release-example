@@ -27,4 +27,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: Executable
-          path: build/linux/x86_64/releases
+          path: build/linux/x86_64/release
